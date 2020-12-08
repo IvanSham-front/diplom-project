@@ -12,6 +12,9 @@
 
 .skills-block__list {
 	padding-top: 39px;
+	@media (min-width: $small) {
+		margin: 0 auto;
+	}
 	@media (min-width: $medium) {
 		padding-top: 88px;
 		margin: 0 auto 13px;

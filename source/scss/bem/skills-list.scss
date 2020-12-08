@@ -1,8 +1,11 @@
 .skills-list {
 	@include flex-box(column wrap, space-between);
+	@media (min-width: $small) {
+		flex-flow: row wrap;
+		max-width: 80%;
+	}
 	@media (min-width: $medium) {
 		max-width: 775px;
-		flex-flow: row wrap;
 	}
 	@media (min-width: $big) {
 		max-width: 100%;

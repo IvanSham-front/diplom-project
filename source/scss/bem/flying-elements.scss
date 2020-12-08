@@ -26,6 +26,9 @@
 
 .flying-elements__item_hash {
     @include transform((-100px, 77px), 15deg, 1.7);
+    @media (min-width: $small) {
+        @include transform((-20px, 100px), 15deg, 2);
+    }
     @media (min-width: $medium) {
         @include transform((25px, 262px), 15deg, 2);
     }
@@ -35,7 +38,10 @@
 }
 
 .flying-elements__item_braces {
-    @include transform((-85px, -50px), 30deg, 1.6);  
+    @include transform((-85px, -50px), 30deg, 1.6); 
+    @media (min-width: $small) {
+        @include transform((100px, -180px), 15deg, 2);
+    } 
     @media (min-width: $medium) {
         @include transform ((46px, -251px), 30deg, 1.6);
     }
@@ -46,6 +52,9 @@
 
 .flying-elements__item_slash {
     @include transform((37px, -90px), -30deg, 1.2);
+    @media (min-width: $small) {
+        @include transform((280px, -150px), 15deg, 2);
+    }
     @media (min-width: $medium) {
         @include transform((390px,-213px), 10deg, 1.5);
     }
@@ -56,6 +65,9 @@
 
 .flying-elements__item_first-div {
     @include transform((107px, -48px), 25deg, 0.9);
+    @media (min-width: $small) {
+        @include transform((300px, 100px), 15deg, 1);
+    }
     @media (min-width: $medium) {
         @include transform((845px,-338px), -10deg, 1);
     }

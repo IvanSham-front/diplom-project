@@ -23,6 +23,9 @@ a {
 	max-width: 320px;
 	margin: 0 auto;
 	padding: 0 20px;
+	@media (min-width: $small) {
+		max-width: $small;
+	}
 	@media (min-width: $medium) {
 		@include fix-cont($medium, 40px)
 	}

@@ -6,6 +6,9 @@
 	padding-top: 45px;
 	margin-bottom: 46px;
 	@include flex-box(column wrap, space-between);
+	@media (min-width: $small) {
+		flex-flow: row nowrap;
+	}
 	@media (min-width: $medium) {
 		padding-top: 106px;
 		margin-bottom: 64px;
@@ -19,9 +22,12 @@
 .footer__central-block {
 	padding-top: 30px;
 	margin-bottom: 24px;
+	@media (min-width: $small) {
+		padding-top: 0;
+
+	}
 	@media (min-width: $medium) {
 		margin-right: -51px;
-		padding-top: 0;
 	}
 	@media (min-width: $big) {
 		margin-right: -87px;

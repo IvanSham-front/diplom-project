@@ -6,10 +6,13 @@
 	flex-direction: column;
 	align-items: center;
 	padding-top: 77px;
-	@media (min-width: $medium) {
-		padding-top: 70px;
+	@media (min-width: $small) {
 		flex-direction: row;
 		justify-content: space-between;
+	}
+	@media (min-width: $medium) {
+		padding-top: 70px;
+
 	}
 }
 
@@ -23,10 +26,17 @@
 	background: url("../img/ellipse-big.png") no-repeat;
 	background-size: 470px 391px;
 	background-position-x: -58px;
-    background-position-y: 35px;
+	background-position-y: 35px;
+	@media (min-width: $small) {
+		width: 470px;
+		height: 334px;
+		background-position-x: 0;
+		left: 50%;
+	}
     @media (min-width: $medium) {
 		width: 919px;
 		height: 646px;
+		left: initial;
 		right: 16px;
 		background-size: 919px 630px;
 		background-position-x: 380px;
@@ -44,8 +54,10 @@
 .face__text {
 	background-color: $white;
 	padding-top: 8px;
-	@media (min-width: $medium) {
+	@media (min-width: $small) {
 		order: -1;
+	}
+	@media (min-width: $medium) {
 		margin-top: -82px;
 		padding-top: 0;
 	}

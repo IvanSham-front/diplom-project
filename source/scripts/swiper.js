@@ -5,6 +5,10 @@ const swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
     spaceBetween: 50,
     breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetweenSlides: 20
+      },
       1024: {
           slidesPerView: 2,
           spaceBetweenSlides: 20
