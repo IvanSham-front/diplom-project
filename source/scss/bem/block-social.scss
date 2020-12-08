@@ -1,0 +1,21 @@
+.block-social {
+	@media (min-width: $medium) {
+		flex-basis: 246px;
+	}
+}
+
+.block-social__button {
+	width: 280px;
+	margin-bottom: 54px;
+	@media (min-width: $medium) {
+		max-width: 245px;
+		margin-top: -5px;
+		margin-bottom: 34px;
+		padding: 12px 20px;
+	}
+	@media (min-width: $big) {
+		padding: 12px;
+		max-width: 250px;
+	}
+}
+

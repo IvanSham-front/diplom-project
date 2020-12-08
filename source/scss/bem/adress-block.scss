@@ -1,0 +1,51 @@
+.adress-block {
+	@include font(20px, bold);
+	@media (min-width: $medium) {
+		font-size: 25px;
+	}
+}
+
+
+.adress {
+	font-style: normal;
+}
+
+.adress__li_margin {
+	margin-bottom: 23px;
+	@media (min-width: $medium) {
+		margin-bottom: 30px;
+	}
+}
+
+.adress__call-number, .adress__mail {
+	&:hover {
+		text-decoration: underline;
+		.adress__icon-phone, .adress__icon-mail {
+			fill: $orange;
+		}
+	}
+}
+
+.adress__icon-phone, .adress__icon-mail {
+	fill: $pink;
+	margin-right: 12px;
+}
+
+.adress__icon-phone {
+	width: 15px;
+	height: 15px;
+	@media (min-width: $medium) {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.adress__icon-mail {
+	width: 15px;
+	height: 12px;
+	@media (min-width: $medium) {
+		width: 21px;
+		height: 19px;
+	}
+}
+

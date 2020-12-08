@@ -1,0 +1,95 @@
+.skills-list {
+	@include flex-box(column wrap, space-between);
+	@media (min-width: $medium) {
+		max-width: 775px;
+		flex-flow: row wrap;
+	}
+	@media (min-width: $big) {
+		max-width: 100%;
+		flex-wrap: nowrap;
+	}
+}	
+
+.skills-list__li {
+	@include flex-box(column nowrap, space-between);
+	align-items: center;
+	max-width: 230px;
+	margin: 0 auto 47px;
+	@media (min-width: $medium) {
+		max-width: ($big / 4);
+		margin-bottom: 83px;
+	}
+	@media (min-width: $big) {
+		margin: 0 0 83px 0;
+	}
+}
+
+.skills-list__li_layout {
+	@media (min-width: $big) {
+		margin-left: -30px;
+	}
+}
+
+.skills-list__li_adaptive {
+	@media (min-width: $big) {
+		margin-right: -32px;
+	}
+}
+
+.skills-list__li_frontend {
+	@media (min-width: $big) {
+		margin-right: -40px;
+	}
+}
+
+.skills-list__li_fixed {
+	margin-bottom: 52px;
+	@media (min-width: $medium) {
+		margin-bottom: 83px;
+	}
+	@media (min-width: $big) {
+		margin-right: -30px;
+	}
+}
+
+.skills-list__icon {
+	width: 62px;
+	height: 62px;
+	margin-bottom: 15px;
+	@media (min-width: $medium) {
+		width: 84px;
+		height: 75px;
+	}
+}
+
+.skills-list__icon_layout {
+	@media (min-width: $big) {
+		margin-right: -10px;
+	}
+}
+
+
+.skills-list__icon_frontend, .skills-list__icon_fixed {
+	padding-top: 5px;
+	margin-bottom: 19px;
+	@media (min-width: $medium) {
+		padding-top: 0;
+		margin-bottom: 15px;
+	}
+	@media (min-width: $big) {
+		
+	}
+}
+
+
+
+.skills-list__text {
+	text-align: center;
+	color: $grey;
+	line-height: 1.4;
+	letter-spacing: -0.5px;
+	@media (min-width: $medium) {
+		font-size: 21px;
+	}
+}
+

@@ -1,0 +1,21 @@
+.page-section {
+	background-color: $white;
+}
+
+.page-section__title {
+	text-align: center;
+	@media (min-width: $medium) {
+		font-size: 54px;
+	}
+}
+
+.page-section__button {
+	margin: 0 auto;
+	width: 280px;
+	@media (min-width: $medium) {
+		width: 320px;
+	}
+	@media (min-width: $big) {
+		width: 268px;
+	}
+}

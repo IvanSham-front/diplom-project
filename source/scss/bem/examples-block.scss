@@ -1,0 +1,31 @@
+.examples-block__title {
+	padding-top: 93px;
+	@media (min-width: $medium) {
+		padding-top: 193px;
+	}
+	@media (min-width: $big) {
+		padding-top: 192px;
+		padding-right: 7px;
+	}
+}
+
+.examples-block__list {
+	padding-top: 39px;
+	@include flex-box(row nowrap, flex-start);
+	@media (min-width: $medium) {
+		padding-top: 97px;
+	}
+	@media (min-width: $big) {
+		padding-top: 100px;
+		margin-bottom: 30px;
+	}
+}
+
+.examples-block__points {
+	padding-top: 19px;
+	margin-bottom: 46px;
+	@media (min-width: $medium) {
+		padding-top: 102px;
+		margin-bottom: 95px;
+	}
+}

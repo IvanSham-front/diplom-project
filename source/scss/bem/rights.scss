@@ -1,0 +1,12 @@
+.rights {
+	margin: 0;
+	padding: 17px;
+	font-size: 12px;
+	color: #ffffff;
+	text-align: center;
+	background-color: #31293c;
+	@media (min-width: $medium) {
+		font-size: 16px;
+		padding: 29px;
+	}
+}

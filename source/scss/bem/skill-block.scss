@@ -1,0 +1,23 @@
+.skills-block__title {
+	padding-top: 43px;
+	@media (min-width: $medium) {
+		padding-right: 28px;
+		padding-top: 66px;
+	}
+	@media (min-width: $big) {
+		padding-top: 69px;
+		padding-right: 3px;
+	}	
+}
+
+.skills-block__list {
+	padding-top: 39px;
+	@media (min-width: $medium) {
+		padding-top: 88px;
+		margin: 0 auto 13px;
+	}
+	@media (min-width: $big) {
+		margin-bottom: 12px;
+		padding-top: 89px;	
+	}
+}

@@ -1,0 +1,19 @@
+.header__inner {
+		padding-top: 30px;
+		position: relative;
+		@include flex-box(row nowrap, space-between);
+		@media (min-width: $medium) {
+			padding-top: 37px;
+		}
+		@media (min-width: $big) {
+			padding-top: 42px;
+		}
+}
+
+.header__right-block {
+		@media (min-width: $big) {
+			margin-top: -7px;
+		}
+}	
+
+

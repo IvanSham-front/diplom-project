@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+	<html lang="ru">
+		<head>
+			<title>Дипломная работа</title>
+
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<link rel="preload" href="fonts/roboto-700.woff2" as="font">
+			<link rel="preload" href="fonts/roboto-400.woff2" as="font">
+
+			<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+			<link rel="stylesheet" type="text/css" href="styles/styles-min.css">
+		</head>
+
+		<body>
+			<header class="header">
+				<div class="fixed-container header__inner">
+					<button class="burger-button" id="dropDownMenu-js" type="button" aria-expanded="false" aria-controls="hiddenMenu-js" aria-label="Развернуть меню"></button>
+
+					<nav class="nav nav_hidden" id="nav-js" aria-controls="dropDownMenu-js">
+												
+						<ul class="nav__menu" id="hiddenMenu-js">
+							<li class="nav__item"><a href="#services-js">Услуги</a></li>
+							
+							<li class="nav__item"><a href="#portfolio-js">Портфолио</a></li>
+
+							<li class="nav__item"><a href="#cost-js">Стоимость</a></li>
+						</ul>
+					</nav>
+			
+					<div class="block-phone header__right-block">
+						<a href="tel:+74999955577" class="block-phone__number">+7 (499) 995-55-77</a>
+
+						<a href="#openModal-js" id="openModalButton-js" class="btn block-phone__button btn_pink" aria-label="Заказать звонок">
+							<svg class="block-phone__icon">
+								<use xlink:href="img/sprite.svg#phone"></use>
+							</svg>
+							<span class="block-phone__text">Заказать звонок</span>
+						</a>
+					</div>
+				</div> <!-- fixed-container -->	
+			</header>
+
+			<main class="main">
+				<div class="fixed-container">		
+					<section class="face">
+						<figure class="face__figure">
+							<div class="face__ellipse-background"></div>
+
+							<picture>
+								<source 
+									media="(min-width: 1024px)"  
+									type="image/webp" 
+									srcset="
+										img/human-tablet.webp 1x, 
+										img/human-tablet-2x.webp 2x">
+
+								<source 
+									type="image/webp" 
+									srcset="
+										img/human-mobile.webp 1x, 
+										img/human-mobile-2x.webp 2x">
+
+								<source 
+									media="(min-width: 1024px)" 
+									srcset="
+										img/human-tablet.png 1x, 
+										img/human-tablet-2x.png 2x">
+	
+								<img
+									class="face__picture-human" 
+									src="img/human-mobile.png" 
+									srcset="img/human-mobile-2x.png 2x" 
+									alt="Дмитрий Алексеев">
+							</picture>
+
+							<div class="flying-elements">
+								<ul class="flying-elements__ul">
+									<li class="flying-elements__li">
+										<span class="flying-elements__item flying-elements__item_hash" >#</span>
+									</li>
+
+									<li class="flying-elements__li">
+										<span class="flying-elements__item flying-elements__item_braces">{ }</span>
+									</li>
+
+									<li class="flying-elements__li">
+										<span class="flying-elements__item flying-elements__item_slash">&lt;/&gt;</span>
+									</li>
+
+									<li class="flying-elements__li">
+										<span class="flying-elements__item flying-elements__item_first-div">&lt;div&gt;</span>
+									</li>
+
+									<li class="flying-elements__li">
+										<span class="flying-elements__item flying-elements__item_second-div">&lt;div&gt;</span>
+									</li>
+								</ul>
+							</div>
+
+							<figcaption class="face__text">
+								<h1 class="title face__title">Дмитрий Алексеев
+									<span class="face__conception">Frontend-разработчик и веб-верстальщик</span>
+								</h1>
+																
+								<a href="#services-js" class="btn face__button">Узнать больше</a>
+							</figcaption>	
+							
+						</figure>	
+
+					
+					</section>	<!--face-->
+
+					<section class="page-section skills-block">
+						<h2 class="title page-section__title skills-block__title" id="services-js">Что я делаю</h2>
+						
+						<ul class="skills-list skills-block__list">
+							<li class="skills-list__li skills-list__li_layout">
+								<svg class="skills-list__icon skills-list__icon_layout">
+									<linearGradient id="linearGradient" x1="100%" y1="0" x2="100%" y2="100%">
+										<stop offset="0%" stop-color="#f82370"/>
+										 <stop offset="100%" stop-color="#ff8f5a"/>
+									</linearGradient>
+
+									<use xlink:href="img/sprite.svg#icon-1" fill="url(#linearGradient)"></use>
+								</svg>
+								<p class="skills-list__text">Верстка лендинг-страниц и&nbsp;сайтов любой сложности</p>
+							</li>	
+
+							<li class="skills-list__li skills-list__li_adaptive">
+								<svg class="skills-list__icon skills-list__icon_adaptive">
+									<use xlink:href="img/sprite.svg#icon-2" fill="url(#linearGradient)"></use>
+								</svg>
+
+								<p class="skills-list__text">Адаптивная верстка под&nbsp;все браузеры и&nbsp;устройства</p>
+							</li>	
+
+							<li class="skills-list__li skills-list__li_frontend">
+								<svg class="skills-list__icon skills-list__icon_frontend">
+									<use xlink:href="img/sprite.svg#icon-3" fill="url(#linearGradient)"></use>
+								</svg>
+
+								<p class="skills-list__text">Frontend-разработка и&nbsp;программирование</p>
+							</li>
+							
+							<li class="skills-list__li skills-list__li_fixed">
+								<svg class="skills-list__icon skills-list__icon_fixed">
+									<use xlink:href="img/sprite.svg#icon-4" fill="url(#linearGradient)"></use>
+								</svg>
+								<p class="skills-list__text">Исправление и&nbsp;доработка существующей верстки</p>
+							</li>		
+						</ul>		
+
+						<a class="btn page-section__button" id="buttonFindCost-js" href="#cost-js"> 
+						Узнать стоимость
+					</a>
+					</section> <!--central-block-->
+
+					<section class="page-section examples-block">
+						<h2 class="title page-section__title examples-block__title" id="portfolio-js">Примеры моих работ</h2>
+						<div class="examples swiper-container">
+							<ul class="examples__ul examples-block__list swiper-wrapper" id="slideContainer-js">
+								<li class="examples__item example-js swiper-slide">
+									<figure class="example example_number-1 ">
+										<picture>
+											<source 
+												media="(min-width: 1200px)" 
+												type="image/webp" 
+												srcset="
+													img/example-1-desktop.webp 1x, 
+													img/example-1-desktop-2x.webp 2x">
+
+											<source 
+												media="(min-width: 1024px)" 
+												type="image/webp" 
+												srcset="
+													img/example-1-tablet.webp 1x, 
+													img/example-1-tablet-2x.webp 2x">
+
+											<source  
+												type="image/webp" 
+												srcset="
+													img/example-1-mobile.webp 1x, 
+													img/example-1-mobile-2x.webp 2x">
+
+											<source 
+												media="(min-width: 1200px)" 
+												srcset="
+													img/example-1-desktop.jpg 1x, 
+													img/example-1-desktop-2x.jpg 2x">
+
+											<source 
+												media="(min-width: 1024px)" 
+												srcset="
+													img/example-1-tablet.jpg 1x, 
+													img/example-1-tablet-2x.png 2x">
+
+											<img  
+												class="example__img" 
+												src="img/example-1-mobile.jpg"
+												srcset="img/example-1-mobile-2x.jpg 2x" 
+												alt="Пример сайта">
+										</picture>
+
+										<figcaption class="example__text">
+											<a href=#>Сайт психолога Веры Атоновой</a>
+										</figcaption>
+									</figure>
+								</li>
+								
+								<li class="examples__item example-js swiper-slide">	
+									<figure class="example example_number-2 ">
+										<picture>
+											<source 
+												media="(min-width: 1200px)" 
+												type="image/webp" 
+												srcset="
+													img/example-2-desktop.webp 1x, 
+													img/example-2-desktop-2x.webp 2x">
+
+											<source 
+												media="(min-width: 1024px)" 
+												type="image/webp" 
+												srcset="
+													img/example-2-tablet.webp 1x, 
+													img/example-2-tablet-2x.webp 2x">
+
+											<source  
+												type="image/webp" 
+												srcset="
+													img/example-2-mobile.webp 1x, 
+													img/example-2-mobile-2x.webp 2x">
+
+											<source 
+												media="(min-width: 1200px)" 
+												srcset="
+													img/example-2-desktop.jpg 1x, 
+													img/example-2-desktop-2x.jpg 2x">
+
+											<source 
+												media="(min-width: 1024px)" 
+												srcset="
+													img/example-2-tablet.jpg 1x, 
+													img/example-2-tablet-2x.png 2x">
+
+											<img  
+												class="example__img" 
+												src="img/example-2-mobile.jpg"
+												srcset="img/example-2-moblie-2x.jpg 2x" 
+												alt="Пример сайта">
+										</picture>	
+
+										<figcaption class="example__text">
+											<a href="#">Сайт магазина детской одежды</a>
+										</figcaption>
+									</figure>
+								</li>
+								
+								<li class="examples__item example-js swiper-slide">	
+									<figure class="example example_number-3 ">
+										<picture>
+											<source 
+												media="(min-width: 1200px)" 
+												type="image/webp" 
+												srcset="
+													img/example-3-desktop.webp 1x, 
+													img/example-3-desktop-2x.webp 2x">
+
+											<source 
+												media="(min-width: 1024px)" 
+												type="image/webp" 
+												srcset="
+													img/example-3-tablet.webp 1x, 
+													img/example-3-tablet-2x.webp 2x">
+
+											<source  
+												type="image/webp" 
+												srcset="
+													img/example-3-mobile.webp 1x, 
+													img/example-3-mobile-2x.webp 2x">
+
+											<source 
+												media="(min-width: 1200px)" 
+												srcset="
+													img/example-3-desktop.jpg 1x, 
+													img/example-3-desktop-2x.jpg 2x">
+
+											<source 
+												media="(min-width: 1024px)" 
+												srcset="
+													img/example-3-tablet.jpg 1x, 
+													img/example-3-tablet-2x.png 2x">
+
+											<img  
+												class="example__img" 
+												src="img/example-3-mobile.jpg"
+												srcset="img/example-3-mobile-2x.jpg 2x" 
+												alt="Пример сайта">
+										</picture>
+
+										<figcaption class="example__text">
+												<a href="#">Сайт магазина &lt;&lt;рыболов&gt;&gt;</a>
+										</figcaption>
+									</figure>
+								</li>
+
+								<li class="examples__item example-js swiper-slide">	
+									<figure class="example example_number-4 ">
+										<picture>
+											<source 
+												media="(min-width: 1200px)" 
+												type="image/webp" 
+												srcset="
+													img/example-4-desktop.webp 1x, 
+													img/example-4-desktop-2x.webp 2x">
+
+											<source 
+												media="(min-width: 1024px)" 
+												type="image/webp" 
+												srcset="
+													img/example-4-tablet.webp 1x, 
+													img/example-4-tablet-2x.webp 2x">
+
+											<source  
+												type="image/webp" 
+												srcset="
+													img/example-4-mobile.webp 1x, 
+													img/example-4-mobile-2x.webp 2x">
+
+											<source 
+												media="(min-width: 1200px)" 
+												srcset="
+													img/example-4-desktop.jpg 1x, 
+													img/example-4-desktop-2x.jpg 2x">
+
+											<source 
+												media="(min-width: 1024px)" 
+												srcset="
+													img/example-4-tablet.jpg 1x, 
+													img/example-4-tablet-2x.png 2x">
+
+											<img  
+												class="example__img" 
+												src="img/example-4-mobile.jpg"
+												srcset="img/example-4-mobile-2x.jpg 2x" 
+												alt="Пример сайта">
+										</picture>
+
+										<figcaption class="example__text">
+												<a href="#">Сайт магазина строительной техники</a>
+										</figcaption>
+									</figure>
+								</li>
+							</ul>
+
+							<div class="swiper-pagination"></div>
+						</div>	
+
+						<ul class="arrows-button arrows-button_position">		
+							<li>
+								<button class="arrows-button__left swiper-button-prev" id="slideLeft-js" type="button" aria-label="Предыдущий слайды"></button>
+							</li>
+							
+							<li>	
+								<button class="arrows-button__right swiper-button-next" id="slideRight-js" type="button" aria-label="Следующие слайды"></button>
+							</li>
+						</ul>
+
+						<a class="btn page-section__button" id="buttonOrderProject-js" href="#">Заказать проект</a>
+					 </section> <!--examples-block -->
+				</div> <!--fixed-container -->
+ 
+				<section class="advert advert_size" id="cost-js">
+					<div class="fixed-container advert-fixed"> 
+						<div class="flying-elements flying-elements_white">
+							<ul>	
+								<li class="flying-elements__li">
+									<span class="flying-elements__item flying-elements__item_hash-down">#</span>
+								</li>
+	
+								<li class="flying-elements__li">
+									<span class="flying-elements__item flying-elements__item_braces-down">{ }</span>
+								</li>
+	
+								<li class="flying-elements__li">
+									<span class="flying-elements__item flying-elements__item_slash-down">&lt;/&gt;</span>
+								</li>
+	
+								<li class="flying-elements__li">
+									<span class="flying-elements__item flying-elements__item_first-div-down">&lt;div&gt;</span>
+								</li>
+	
+								<li class="flying-elements__li">
+									<span class="flying-elements__item flying-elements__item_second-div-down">&lt;div&gt;</span>
+								</li>
+							</ul>		
+						</div>
+						
+						<h2 class="visually-hidden">Объявление</h2>
+
+						<p class="advert__title ">
+							Адаптивная&nbsp;вёрстка под&nbsp;все&nbsp;устройства и&nbsp;браузеры&nbsp;от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.
+						</p>
+						<p class="advert__text ">
+							<small>
+								Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально, в&nbsp;зависимости от сложности задач.
+							</small>
+						</p>	
+					</div>	<!--fixed-container-->
+				</section> <!--advert-->
+			</main>
+
+			<footer class="footer">
+				<div class="fixed-container footer__inner">
+					<div class="nav">
+						<ul class="nav__list">
+							<li class="nav__li ">
+								<a class="nav__link" href="#services-js">
+									Услуги
+								</a>	
+							</li>
+
+							<li class="nav__li">
+								<a class="nav__link" href="#portfolio-js">
+									Портфолио
+								</a>
+							</li>
+
+							<li class="nav__li ">
+								<a class="nav__link" href="#cost-js">
+									Стоимость
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="adress-block footer__central-block">
+						<address class="adress">	
+							<ul>
+								<li class="adress__li adress__li_margin ">
+									<a class="adress__call-number" href="tel:+74999957755">
+										<svg class="adress__icon-phone">
+											<use xlink:href="img/sprite.svg#phone"></use>
+										</svg>
+										+7 (499) 995-77-55
+									</a>
+								</li>
+								
+								<li class="adress__li ">
+									<a class="adress__mail" href="mailto:dmitry@alekseev.com">
+										<svg class="adress__icon-mail">
+											<use xlink:href="img/sprite.svg#mail"></use>
+										</svg>
+										dmitry@alekseev.com	
+									</a>
+								</li>
+							</ul>	
+						</address>	
+					</div>
+
+					<div class="block-social footer__right-block">
+						<a href="#" id="openModalButtonFooter-js" class="btn btn_pink block-social__button">
+							Заказать звонок
+						</a>
+
+						<ul class="social block-social__list">
+							<li class=" social__li social__li_vk">
+								<a class="social__link social__link_vk" href="#" aria-label="Я во Вконтакте">
+									<svg class="social__icon social__icon_vk">
+										<use xlink:href="img/sprite.svg#vk-icon"></use>
+									</svg>
+								</a>	
+							</li>
+							
+							<li class=" social__li">
+								<a class="social__link social__link_facebook" href="#" aria-label="Я в Facebook">
+									<svg class="social__icon social__icon_facebook">
+										<use xlink:href="img/sprite.svg#facebook-icon"></use>
+									</svg>
+								</a>	
+							</li>
+
+							<li class=" social__li social__li_twitter">
+								<a class="social__link social__link_twitter" href="#" aria-label="Я в TWitter">
+									<svg class="social__icon social__icon_twitter">
+										<use xlink:href="img/sprite.svg#twitter-icon"></use>
+									</svg>
+								</a>
+							</li>	
+						
+							<li class=" social__li">
+								<a class="social__link social__link_instagram" href="#" aria-label="Я в Instagram">
+									<svg class="social__icon social__icon_instagram">
+										<use xlink:href="img/sprite.svg#instagram-icon"></use>
+									</svg>
+								</a>
+							</li>	
+						</ul>
+					</div>
+
+				</div> <!--fixed-container-->
+				
+				<p class="rights">
+					&copy; Дмитрий Алексеев, 2016-2020
+				</p>
+			</footer>
+
+
+			<div id="modalWindow-js" aria-modal="true" role="dialog" class="modal-block">
+				<form id="modalForm-js" class="modal-block__form" action="php/send.php" method="POST">
+					<h2 class="title modal-block__title">Заказать звонок</h2>
+
+					<button class="modal-block__button-close" id="buttonClose-js" type="button">
+						<svg class="modal-block__icon-close">
+							<use xlink:href="img/sprite.svg#close-button"></use>
+						</svg>
+					</button>
+
+					<input class="modal-block__textarea" type="text" name="name" id="name-js" placeholder="Ваше имя" required>
+
+					<input class="modal-block__textarea" id="number-js" type="text" name="phone" placeholder="Ваш номер телефона" required>
+
+					<input class="modal-block__textarea" type="email" name="email" placeholder="Ваша эл.почта" required>
+
+					<button class="btn modal-block__button-sub" type="submit" id="buttonSub-js">Отправить</button>
+				</form>
+			</div>
+
+			<div id="overlay-js" class="overlay"></div>
+
+			<script src="scripts/script.js" defer></script>
+		</body>
+	</html>

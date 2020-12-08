@@ -1,0 +1,111 @@
+.flying-elements {
+    position: absolute;
+    color: $pink;
+    z-index: -1;
+    @include font(16px, bold);
+    @media (min-width: $medium) {
+        font-size: 29px;
+    }
+    @media (min-width: $big) {
+        z-index: inherit;
+    }
+}
+
+.flying-elements_white {
+    color: $white;
+    z-index: inherit;
+    display: none;
+    @media (min-width: $medium){
+        display: block;
+    }
+}
+
+.flying-elements__item {
+    display: inline-block;
+}
+
+.flying-elements__item_hash {
+    @include transform((-100px, 77px), 15deg, 1.7);
+    @media (min-width: $medium) {
+        @include transform((25px, 262px), 15deg, 2);
+    }
+    @media (min-width: $big) {
+        @include transform((-124px, 0), 15deg ,2);
+    }
+}
+
+.flying-elements__item_braces {
+    @include transform((-85px, -50px), 30deg, 1.6);  
+    @media (min-width: $medium) {
+        @include transform ((46px, -251px), 30deg, 1.6);
+    }
+    @media (min-width: $big) {
+        @include transform((-240px, -267px), 30deg, 1.7);
+    }
+}
+
+.flying-elements__item_slash {
+    @include transform((37px, -90px), -30deg, 1.2);
+    @media (min-width: $medium) {
+        @include transform((390px,-213px), 10deg, 1.5);
+    }
+    @media (min-width: $big) {
+        @include transform((7px, 230px), -20deg, 1.5)
+    }
+}
+
+.flying-elements__item_first-div {
+    @include transform((107px, -48px), 25deg, 0.9);
+    @media (min-width: $medium) {
+        @include transform((845px,-338px), -10deg, 1);
+    }
+    @media (min-width: $big) {
+        @include transform((415px, -321px), -15deg, 1);
+    }
+}
+
+.flying-elements__item_second-div {
+    display: none;
+    @media (min-width: $medium) {
+        display: inline-block;
+        @include transform((310px, 65px), -20deg, 1.2);
+    }
+    @media (min-width: $big) {
+        @include transform((580px, 25px), 20deg, 1.2);
+    }
+}
+
+.flying-elements__item_hash-down {
+    @include transform ((-50px, 0), 0 , 0);
+    @media (min-width: $big) {
+        @include transform((-230px, 260px), 15deg, 1.9)
+    }
+}
+
+.flying-elements__item_braces-down {
+    @include transform((115px, -13px), 20deg, 1.2);
+    @media (min-width: $big) {
+        @include transform((-345px, 35px), 25deg, 1.7);
+    }
+}
+
+.flying-elements__item_slash-down {
+    @include transform((840px, 220px), -30deg, 1.5);
+    @media (min-width: $big) {
+        @include transform((1180px, 10px), -25deg, 1.5);
+    }
+}
+
+.flying-elements__item_first-div-down {
+    @include transform((460px, 190px), 20deg, 0.9);
+    @media (min-width: $big) {
+        @include transform((950px, 200px), 20deg, 1.3);
+    }
+}
+
+.flying-elements__item_second-div-down {
+    @include transform ((-50px, 0), 0 , 0);
+    @media (min-width: $big) {
+        @include transform((1300px, 150px), -20deg, 1.5);
+    }
+}

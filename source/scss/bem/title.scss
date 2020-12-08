@@ -1,0 +1,8 @@
+.title {
+	@include font(30px, bold);
+	text-align: center;
+	@media (min-width: $medium) {
+		font-size: 54px;
+		letter-spacing: 0.4px;
+	}
+}

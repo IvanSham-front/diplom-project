@@ -1,0 +1,47 @@
+.social {
+	display: flex;
+	fill: $grey
+}	
+
+.social__icon {
+	display: block;
+	width: 42px;
+	height: 31px;
+	fill: $grey;
+}
+
+.social__icon_vk {
+	&:hover {
+		fill: $vkFbBlue;
+	}
+}
+
+
+.social__icon_facebook {
+	margin-top: -2px;
+	&:hover {
+		fill: $vkFbBlue;
+	}
+}
+
+.social__icon_twitter {
+	&:hover {
+		fill: $twitterBlue;
+	}
+}
+
+.social__icon_instagram {
+	&:hover {
+		fill: $pink;
+	}
+}
+
+.social__li_vk {
+	margin-right: 13px;
+	margin-left: -3px;
+}
+
+.social__li_twitter {
+	margin-right: 17px;
+	margin-left: 10px;
+}

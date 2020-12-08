@@ -1,0 +1,33 @@
+.btn {
+	display: block;
+	color: $white;
+	background-color: $orange;
+	padding: 18px;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	@media (min-width: $medium) {
+		padding: 24px;
+	}
+	@media (min-width: $big){
+		padding: 20px;
+	}
+	&:hover {
+		background-color: $orangeHover;
+		transition: .2s;
+	}
+}
+.btn_pink {
+	@media (min-width: $medium) {
+		color: $pink;
+		border: 1px solid $pink;
+		background-color: $white;
+		transition: all .3s;
+		&:hover {
+			color: $white;
+			background: $gradient;
+			border-color: $white;
+			transition: .4s;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.examples {
+	padding-bottom: 83px;
+	@media (min-width: $medium) {
+		padding-bottom: 189px;
+	}
+	@media (min-width: $big) {
+		padding-bottom: 40px;
+	}
+}
+
+.example__text {
+	padding-top: 12px;
+	@include font(18px, bold);
+	text-align: center;
+	color: $grey;
+	@media (min-width: $medium) {
+		font-size: 25px;
+		letter-spacing: 0.6px;
+		padding-top: 15px;
+	}
+	@media (min-width: $big) {
+		font-size: 20px;
+		padding-top: 31px;
+	}
+}

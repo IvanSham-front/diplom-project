@@ -1,0 +1,43 @@
+
+body {
+	min-width: 320px;    
+	margin: 0;
+	font-family: "Roboto", "Arial",  sans-serif;
+	font-size: 16px;
+	color: #000000;
+	background-color: #ffffff;
+	line-height: normal;
+	overflow-x: hidden;
+}
+
+body.modal-active {
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.fixed-container {
+	max-width: 320px;
+	margin: 0 auto;
+	padding: 0 20px;
+	@media (min-width: $medium) {
+		@include fix-cont($medium, 40px)
+	}
+	@media (min-width: $big) {
+		@include fix-cont($big, 15px)
+	} 
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 ;
+  border:0 ;
+  height: 1px; 
+  width: 1px; 
+  overflow: hidden;
+}

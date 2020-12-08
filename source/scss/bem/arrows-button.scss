@@ -1,0 +1,33 @@
+.arrows-button {
+	display: none;
+	z-index: 9;
+	@media (min-width: $big) {
+		@include flex-box(row nowrap, space-between);
+	}
+}
+
+.arrows-button_position {
+	@media (min-width: $big) {
+	position: relative;
+	bottom: 304px;
+	right: 39px;
+	width: 1250px;
+	}
+}
+
+.arrows-button__left, .arrows-button__right {
+	display: inline-block;
+	width: 62px;
+	height: 62px;
+	background-position: center;
+	background-repeat: no-repeat;
+	@include circle;
+}
+
+.arrows-button__left {
+	background-image: url("../img/arrow-left.png");
+}
+
+.arrows-button__right {
+	background-image: url("../img/arrow-right.png");
+}
